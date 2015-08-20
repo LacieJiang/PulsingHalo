@@ -11,7 +11,7 @@
 @interface MultiplePulsingHaloLayer : CALayer
 
 @property (nonatomic, assign) CGFloat radius;                   // default: 60pt
-@property (nonatomic, assign) CGColorRef haloLayerColor;        // color of halo layers
+@property (nonatomic, assign) CGColorRef haloLayerColor;        // color of halo layers' bordercolor
 
 /* properties below should be set before calling "buildSublayers" */
 @property (nonatomic, assign) CGFloat fromValueForRadius;       // default: 0.0
@@ -23,7 +23,7 @@
 @property (nonatomic, assign) CGFloat animationRepeatCount;     // default: INFINITY
 @property (nonatomic, assign) int haloLayerNumber;              // default: 3
 @property (nonatomic, assign) BOOL useTimingFunction;           // default: YES should use timingFunction for animation
-
+@property (nonatomic, assign) CGFloat borderWidthForSublayer;   // default: 1
 
 
 - (id)initWithHaloLayerNum:(int)num andStartInterval:(NSTimeInterval)interval;

@@ -9,6 +9,7 @@
 
 
 #import "PulsingHaloLayer.h"
+#import <UIKit/UIKit.h>
 
 
 @interface PulsingHaloLayer ()
@@ -33,7 +34,7 @@
         self.animationDuration = 3;
         self.pulseInterval = 0;
         self.repeatCount = repeatCount;
-        self.backgroundColor = [[UIColor colorWithRed:0.000 green:0.478 blue:1.000 alpha:1] CGColor];
+        self.borderColor = [[UIColor colorWithRed:0.000 green:0.478 blue:1.000 alpha:1] CGColor];
         self.useTimingFunction = YES;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {

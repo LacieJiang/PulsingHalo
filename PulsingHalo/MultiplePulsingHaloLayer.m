@@ -7,6 +7,7 @@
 //
 
 #import "MultiplePulsingHaloLayer.h"
+#import <UIKit/UIKit.h>
 #import "PulsingHaloLayer.h"
 
 @implementation MultiplePulsingHaloLayer
@@ -28,15 +29,16 @@
         _animationRepeatCount = INFINITY;
         _radius = 60;
         _useTimingFunction = YES;
+        _borderWidthForSublayer = 1.0;
         self.backgroundColor = [[UIColor clearColor] CGColor];
     }
     return self;
 }
 
-- (void)setHaloLayerColor:(CGColorRef)backgroundColor {
-    _haloLayerColor = CGColorRetain(backgroundColor);
+- (void)setHaloLayerColor:(CGColorRef)borderColor {
+    _haloLayerColor = CGColorRetain(borderColor);
     for (PulsingHaloLayer *layer in self.sublayers) {
-        layer.backgroundColor = backgroundColor;
+        layer.borderColor = borderColor;
     }
 }
 
@@ -70,12 +72,13 @@
             layer.fromValueForRadius = self.fromValueForRadius;
             layer.keyTimeForHalfOpacity = self.keyTimeForHalfOpacity;
             layer.pulseInterval = self.pulseInterval;
-            layer.backgroundColor = self.haloLayerColor;
+            layer.borderWidth = self.borderWidthForSublayer;
+            layer.borderColor = self.haloLayerColor;
             layer.useTimingFunction = self.useTimingFunction;
             [self addSublayer:layer];
         });
     }
-    NSLog(@"sub count:%i", self.sublayers.count);
+    NSLog(@"sub count:%lu", (unsigned long)self.sublayers.count);
 }
 
 - (void)dealloc {
