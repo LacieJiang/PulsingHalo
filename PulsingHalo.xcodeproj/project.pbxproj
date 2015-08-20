@@ -10,9 +10,9 @@
 		47B356B01B857C6A00092F17 /* PulsingHalo.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B356AF1B857C6A00092F17 /* PulsingHalo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47B356B61B857C6A00092F17 /* PulsingHalo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B356AA1B857C6A00092F17 /* PulsingHalo.framework */; };
 		47B356C71B857CF600092F17 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47B356C61B857CF600092F17 /* Info.plist */; };
-		47B356CC1B857D0700092F17 /* MultiplePulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B356C81B857D0700092F17 /* MultiplePulsingHaloLayer.h */; };
+		47B356CC1B857D0700092F17 /* MultiplePulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B356C81B857D0700092F17 /* MultiplePulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47B356CD1B857D0700092F17 /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B356C91B857D0700092F17 /* MultiplePulsingHaloLayer.m */; };
-		47B356CE1B857D0700092F17 /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B356CA1B857D0700092F17 /* PulsingHaloLayer.h */; };
+		47B356CE1B857D0700092F17 /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B356CA1B857D0700092F17 /* PulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47B356CF1B857D0700092F17 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B356CB1B857D0700092F17 /* PulsingHaloLayer.m */; };
 		47B356D11B857DEB00092F17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B356D01B857DEB00092F17 /* UIKit.framework */; };
 		47B356D31B857E3D00092F17 /* PulsingHaloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B356D21B857E3D00092F17 /* PulsingHaloTests.m */; };

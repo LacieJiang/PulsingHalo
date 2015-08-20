@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char PulsingHaloVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PulsingHalo/PublicHeader.h>
 
-
+#import <PulsingHalo/MultiplePulsingHaloLayer.h>
+#import <PulsingHalo/PulsingHaloLayer.h>
